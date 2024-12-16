@@ -1,14 +1,22 @@
-import java.util.Scanner;
-class Add
+class PrimeNumbers 
 {
-public static void main(String args[])
+public static void main(String[] args) 
 {
-Scanner myobj=new Scanner(System.in);
-System.out.print("Enter any number:");
-int first=myobj.nextInt();
-System.out.print("Enter any number:");
-int second=myobj.nextInt();
-int add=first+second;
-System.out.println("The sum iss:"+add);
+int limit = 100;
+System.out.println("Prime numbers between 1 and " + limit);
+for(int i=1; i < 100; i++)
+{
+boolean isPrime = true;
+for(int j=2; j < i ; j++)
+{
+if(i % j == 0)
+{
+isPrime = false;
+break;
+}
+}
+if(isPrime)
+System.out.print(i + " ");
+}
 }
 }
