@@ -1,0 +1,25 @@
+public class demo 
+{
+    public static void main(String[] args) 
+{
+        
+        int num1 = 10;
+        int num2 = 20;
+        double pi = 3.14159;
+        String message = "Hello, Java!";
+        boolean isJavaFun = true;
+
+        
+        int sum = num1 + num2;
+        double area = pi * num1 * num1; 
+
+        
+        System.out.println("Number 1: " + num1);
+        System.out.println("Number 2: " + num2);
+        System.out.println("Sum: " + sum);
+        System.out.println("Value of Pi: " + pi);
+        System.out.println("Area of Circle: " + area);
+        System.out.println("Message: " + message);
+        System.out.println("Is Java fun? " + isJavaFun);
+    }
+}
